@@ -1,12 +1,13 @@
 
-class Chord {
-    ArrayList<Note> notes = [];
-
+class Chord extends ArrayList<Note> {
     Chord(String notes) {
-        this.notes = notes
+
+        ArrayList<Note> notesList = notes
                 .split(',')
                 .collect({ new Note(it) })
         ;
+
+        this.addAll notesList
     }
 
     Chord(ArrayList<Note> notes) {
@@ -14,9 +15,6 @@ class Chord {
     }
 
     String toString() {
-        notes
-                .collect({ it.toString() })
-                .join(',')
-        ;
+        collect({ it.toString() }).join(',');
     }
 }

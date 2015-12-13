@@ -1,8 +1,8 @@
 # midi-groovy
 
 ## Classes:
-- Note
-- Chord
+- MIDI.MIDI.Note
+- MIDI.MIDI.Chord
 - Bar
 - Phrase ?
 - Track

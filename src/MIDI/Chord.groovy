@@ -1,3 +1,4 @@
+package MIDI
 
 class Chord extends ArrayList<Note> {
     Chord(String notes) {
